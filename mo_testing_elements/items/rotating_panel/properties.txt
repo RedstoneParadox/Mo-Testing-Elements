@@ -2,9 +2,5 @@
 	{
 	"Authors" "RedstoneParadox"
 	"Description" "A panel that can be set to rotate 30, 45, or 60 degrees"
-	"Icon" "clean/rotating_panel.png"
-		{
-			"all" "rotating_panel.png"
-			"0" "rotating_panel.png"
-		}
+	"all_icon" "clean/rotating_panel.png"
 	}
