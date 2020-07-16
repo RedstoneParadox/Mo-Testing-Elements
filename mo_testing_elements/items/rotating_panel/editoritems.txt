@@ -106,7 +106,7 @@
 				}
 			}
 		"TargetName" "mteRotPanel"
-		"Offset" "64 64 64"
+		"Offset" "64 0 64"
 		"OccupiedVoxels"
 			{
 			"SurfaceVolume"
