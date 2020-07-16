@@ -1,0 +1,15 @@
+"ID" "MO_TESTING_ELEMENTS"
+"Name" "Mo' Testing Elements"
+"Desc" "A package adding more testing elements based on the vanilla ones."
+
+"Item" 
+	{
+	"ID" "MTE_ROTATING_PANEL"
+	"Version" 
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN" "rotating_panel"
+			}
+		}
+	}
