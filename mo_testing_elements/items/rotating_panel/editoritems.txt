@@ -147,6 +147,17 @@
 					"Grid"          "1x1"
 					}
 				}
+			"Inputs"
+				{
+				"BEE2"
+					{
+					"Type"          "AND"
+					"invertVar"     "$start_deployed"
+					"SpawnFire"     "dynamic"
+					"Enable_Cmd"    "base,SetAnimation,rotate_45,0.00,1"
+					"Disable_Cmd"   "base,SetAnimation,reverse_45,0.00,1"
+					}
+				}
 			"ConnectionPoints"
 				{
 				// left
