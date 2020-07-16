@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	$basetexture models\anim_wp\arm_64x64
+	$surfaceprop metal
+}
