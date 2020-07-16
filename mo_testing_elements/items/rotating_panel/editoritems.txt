@@ -10,56 +10,56 @@
 				"Name" "Rotating Panel"
 				"Model"
 					{	// White 90
-					"ModelName"	"bee2_half_panel_clean_white_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// White 60
-					"ModelName"	"bee2_half_panel_clean_black_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// White 45
-					"ModelName"	"bee2_half_panel_clean_white_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// White 30
-					"ModelName"	"bee2_half_panel_clean_black_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Black 90
-					"ModelName"	"bee2_half_panel_clean_black_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Black 60
-					"ModelName"	"bee2_half_panel_clean_white_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Black 45
-					"ModelName"	"bee2_half_panel_clean_black_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Black 30
-					"ModelName"	"bee2_half_panel_clean_white_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Ghost 90
-					"ModelName"	"bee2_half_panel_ghost_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Ghost 60
-					"ModelName"	"bee2_half_panel_ghost_out.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Ghost 45
-					"ModelName"	"bee2_half_panel_ghost_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Model"
 					{	// Ghost 30
-					"ModelName"	"bee2_half_panel_ghost_in.3ds"
+					"ModelName"	"selecion_rotating_panel.3ds"
 					}
 				"Palette"
 					{
-					"Tooltip"	"HALF PANEL"
-					"Image"		"palette/clean/half_panel.png"
+					"Tooltip"	"ROTATING PANEL"
+					"Image"		"palette/clean/rotating_panel.png"
 					}
 				}
 				"MovementHandle"	"HANDLE_4_DIRECTIONS"
