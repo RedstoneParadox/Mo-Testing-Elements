@@ -99,7 +99,7 @@
 			{
 			"0"
 				{
-				"Name" "instances/bee2/clean/items/mo_testing_elements/rotating_panel/rotating_panel.vmf"
+				"Name" "instances/bee2/clean/items/rotating_panel/rotating_panel.vmf"
 				"EntityCount" "3"
 				"BrushCount" "0"
 				"BrushSideCount" "0"
