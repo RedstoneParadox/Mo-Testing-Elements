@@ -4,7 +4,7 @@ $cdmaterials "models\anim_wp"
 
 $sequence rotate_45 "anims\rotate_45.smd"
 $sequence reverse_45 "anims\reverse_45.smd"
-$sequence idle "rotating_panel.smd"
+$sequence idle "anims\idle.smd"
 
 $attachment root "root" 0 0 0 rotate 0 0 0
 $attachment bearing "bearing" 0 0 0 rotate 0 0 0
