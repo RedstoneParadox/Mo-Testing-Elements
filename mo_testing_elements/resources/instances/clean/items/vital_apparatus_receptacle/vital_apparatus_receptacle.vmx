@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "36"
+	"mapversion" "44"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "36"
+	"mapversion" "44"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -106,17 +106,14 @@ world
 }
 entity
 {
-	"id" "683"
-	"classname" "logic_coop_manager"
-	"DefaultPlayerStateA" "0"
-	"DefaultPlayerStateB" "0"
-	"targetname" "receptacle_state"
+	"id" "1052"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "input_toggle"
 	connections
 	{
-		"OnChangeToAnyTrue" "receptacleSetAnimationitem_dropper_close0-1"
-		"OnChangeToAllFalse" "receptacleSetAnimationitem_dropper_open0-1"
-		"OnChangeToAllFalse" "cube_removerEnable0-1"
-		"OnChangeToAllFalse" "cube_removerDisable0.25-1"
+		"OnTrue" "adderAdd1.00-1"
+		"OnFalse" "adderSubtract1.00-1"
 	}
 	"origin" "-64 0 64"
 	editor
@@ -124,7 +121,132 @@ entity
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 0]"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1083"
+	"classname" "math_counter"
+	"max" "0"
+	"min" "0"
+	"StartDisabled" "0"
+	"startvalue" "0"
+	"targetname" "adder"
+	connections
+	{
+		"OutValue" "testInValue0-1"
+	}
+	"origin" "-128 -128 192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "1110"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "has_cube_toggle"
+	connections
+	{
+		"OnTrue" "adderAdd2.00-1"
+		"OnFalse" "adderSubtract2.00-1"
+	}
+	"origin" "-64 0 128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1118"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "start_open_toggle"
+	connections
+	{
+		"OnTrue" "adderAdd4.00-1"
+		"OnFalse" "adderSubtract4.00-1"
+	}
+	"origin" "-64 0 192"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "1154"
+	"classname" "logic_case"
+	"Case01" "0"
+	"Case02" "1"
+	"Case03" "2"
+	"Case04" "3"
+	"Case05" "4"
+	"Case06" "5"
+	"Case07" "6"
+	"Case08" "7"
+	"Case09" "99"
+	"Case10" "99"
+	"Case11" "99"
+	"Case12" "99"
+	"Case13" "99"
+	"Case14" "99"
+	"Case15" "99"
+	"Case16" "99"
+	"targetname" "test"
+	connections
+	{
+		"OnCase01" "resultSetValue10-1"
+		"OnCase02" "resultSetValue00-1"
+		"OnCase03" "resultSetValue10-1"
+		"OnCase04" "resultSetValue00-1"
+		"OnCase05" "resultSetValue00-1"
+		"OnCase06" "resultSetValue10-1"
+		"OnCase07" "resultSetValue10-1"
+		"OnCase08" "resultSetValue10-1"
+	}
+	"origin" "-128 -128 128"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "1181"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "result"
+	connections
+	{
+		"OnTrue" "receptacleSetAnimationitem_dropper_close0-1"
+		"OnFalse" "receptacleSetAnimationitem_dropper_open0-1"
+		"OnFalse" "cube_removerEnable0-1"
+		"OnFalse" "cube_removerDisable0.1-1"
+	}
+	"origin" "-128 -128 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
 	}
 }
 entity
@@ -238,30 +360,9 @@ entity
 }
 entity
 {
-	"id" "661"
-	"classname" "logic_relay"
-	"spawnflags" "0"
-	"StartDisabled" "0"
-	"targetname" "input"
-	connections
-	{
-		"OnTrigger" "receptacle_stateToggleStateA0-1"
-	}
-	"origin" "0 -64 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
 	"id" "32"
 	"classname" "prop_dynamic"
 	"angles" "0 180 -180"
-	"DefaultAnim" "item_dropper_idle"
 	"DisableBoneFollowers" "0"
 	"disableflashlight" "0"
 	"disablereceiveshadows" "0"
@@ -416,10 +517,10 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouchAll" "receptacle_stateSetStateBTrue0-1"
-		"OnEndTouchAll" "receptacle_stateSetStateBFalse0-1"
 		"OnEndTouchAll" "outputProxyRelay0-1"
 		"OnStartTouchAll" "outputProxyRelay0-1"
+		"OnEndTouchAll" "has_cube_toggleSetValue00-1"
+		"OnStartTouchAll" "has_cube_toggleSetValue10-1"
 	}
 	solid
 	{
@@ -510,8 +611,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[142.261 4.90265 135.703]"
-		"look" "[75.2033 -12.8144 92.363]"
+		"position" "[-35.9882 244.097 264.524]"
+		"look" "[-30.3761 199.666 196.088]"
 	}
 }
 cordons
