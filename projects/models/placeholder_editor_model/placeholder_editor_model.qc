@@ -1,4 +1,4 @@
-$modelname "redstone_paradox/rotating_panel.mdl"
+$modelname "redstone_paradox/vital_apparatus_receptacle.mdl"
 $body body "export/placeholder_editor_model.smd"
 
 $sequence idle "export/placeholder_editor_model.smd"

@@ -1,0 +1,161 @@
+"Item" 
+	{
+	"Type" "MTE_VITAL_APPARATUS_RECEPTACLE"
+	"ItemClass" "ItemBase"
+	"Editor"
+	{
+	"SubType"
+		{
+		"Name" "Vital Apparatus Receptacle"
+		"Model"
+			{
+			"ModelName"	"selecion_rotating_panel.3ds"
+			}
+		"Palette"
+			{
+			"Tooltip"	"ITEM RECEPTACLE"
+			"Image"		"palette/clean/vital_apparatus_receptacle.png"
+			}
+		}
+		"DesiredFacing"		"DESIRES_UP"
+		}
+	"Properties"
+		{
+		"Portalable"
+			{
+			"DefaultValue"	"1"
+			"Index"			"0"
+			}
+		"ConnectionCount"
+			{
+			"DefaultValue"	"0"
+			"Index"			"1"
+			}
+		"StartOpen"
+			{
+			"DefaultValue"	"1"
+			"Index"			"2"
+			}
+		}
+	"Exporting"
+		{
+		"Instances"
+			{
+			"0"
+				{
+				"Name" "instances/bee2/clean/items/vital_apparatus_receptacle/vital_apparatus_receptacle.vmf"
+				"EntityCount" "7"
+				"BrushCount" "1"
+				"BrushSideCount" "0"
+				}
+			}
+		"TargetName" "mteRotPanel"
+		"Offset" "64 64 0"
+		"OccupiedVoxels"
+			{
+			"Voxel"
+				{
+				"CollideType"		"COLLIDE_NOTHING"
+				"CollideAgainst"	"COLLIDE_ANTLINES"
+
+				"Pos"		"0 0 0"
+				"Surface"
+					{
+					"Normal"	"0 0 1"
+					}
+				}
+			}
+		"EmbeddedVoxels"
+			{
+			"Voxel"
+				{
+				"Pos"		"0 0 0"
+				}
+			}
+		"Inputs"
+			{
+			"BEE2"
+				{
+				"Type"          "AND"
+				"invertVar"     "$start_open"
+				"SpawnFire"     "dynamic"
+				"Enable_Cmd"    "input_open,Trigger,,0.00,-1"
+				"Disable_Cmd"   "input_close,Trigger,,0.00,-1"
+				}
+			}
+		"Outputs"
+            {
+            "CONNECTION_STANDARD"
+                {
+                "Activate"        "instance:trigger;OnStartTouch"
+                "Deactivate"    "instance:trigger;OnEndTouch"
+                }
+            }
+		"ConnectionPoints"
+			{
+			// left
+			"Point"
+				{
+				"Dir"				"1 0 0"
+				"Pos"				"-1 3 0"
+				"SignageOffset"		"-2 2 0"
+				"Priority"  "0"
+				}
+			"Point"
+				{
+				"Dir"				"1 0 0"
+				"Pos"				"-1 4 0"
+				"SignageOffset"		"-2 5 0"
+				"Priority"  "0"
+				}
+
+			// right
+			"Point"
+				{
+				"Dir"				"-1 0 0"
+				"Pos"				"4 3 0"
+				"SignageOffset"		"5 2 0"
+				"Priority"  "0"
+				}
+			"Point"
+				{
+				"Dir"				"-1 0 0"
+				"Pos"				"4 4 0"
+				"SignageOffset"		"5 5 0"
+				"Priority"  "0"
+				}
+
+			// up
+			"Point"
+				{
+				"Dir"				"0 1 0"
+				"Pos"				"1 -1 0"
+				"SignageOffset"		"0 -2 0"
+				"Priority"  "0"
+				}
+			"Point"
+				{
+				"Dir"				"0 1 0"
+				"Pos"				"2 -1 0"
+				"SignageOffset"		"3 -2 0"
+				"Priority"  "0"
+				}
+
+			// down
+			"Point"
+				{
+				"Dir"				"0 -1 0"
+				"Pos"				"1 8 0"
+				"SignageOffset"		"0 9 0"
+				"Priority"  "0"
+				}
+			"Point"
+				{
+				"Dir"				"0 -1 0"
+				"Pos"				"2 8 0"
+				"SignageOffset"		"3 9 0"
+				"Priority"  "0"
+				}
+			}
+		}
+	}

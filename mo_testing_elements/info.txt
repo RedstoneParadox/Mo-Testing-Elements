@@ -13,3 +13,15 @@
 			}
 		}
 	}
+
+"Item" 
+	{
+	"ID" "MTE_VITAL_APPARATUS_RECEPTACLE"
+	"Version" 
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN" "vital_apparatus_receptacle"
+			}
+		}
+	}
