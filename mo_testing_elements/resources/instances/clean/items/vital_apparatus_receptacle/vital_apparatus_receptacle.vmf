@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "28"
+	"mapversion" "37"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "28"
+	"mapversion" "37"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -102,6 +102,29 @@ world
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
+	}
+}
+entity
+{
+	"id" "683"
+	"classname" "logic_coop_manager"
+	"DefaultPlayerStateA" "0"
+	"DefaultPlayerStateB" "0"
+	"targetname" "receptacle_state"
+	connections
+	{
+		"OnChangeToAnyTrue" "receptacleSetAnimationitem_dropper_close0-1"
+		"OnChangeToAllFalse" "receptacleSetAnimationitem_dropper_open0-1"
+		"OnChangeToAllFalse" "cube_removerEnable0-1"
+		"OnChangeToAllFalse" "cube_removerDisable0.25-1"
+	}
+	"origin" "-64 0 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -204,7 +227,7 @@ entity
 	"id" "335"
 	"classname" "func_instance_io_proxy"
 	"targetname" "output"
-	"origin" "0 0 64"
+	"origin" "64 0 64"
 	editor
 	{
 		"color" "220 30 220"
@@ -215,34 +238,14 @@ entity
 }
 entity
 {
-	"id" "638"
-	"classname" "logic_relay"
-	"StartDisabled" "0"
-	"targetname" "input_open"
-	connections
-	{
-		"OnTrigger" "receptacleSetAnimationitem_dropper_open0-1"
-		"OnTrigger" "cube_removerEnable0-1"
-		"OnTrigger" "cube_removerDisable0.5-1"
-	}
-	"origin" "0 64 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3000]"
-	}
-}
-entity
-{
 	"id" "661"
 	"classname" "logic_relay"
+	"spawnflags" "0"
 	"StartDisabled" "0"
-	"targetname" "input_close"
+	"targetname" "input"
 	connections
 	{
-		"OnTrigger" "receptacleSetAnimationitem_dropper_close0-1"
+		"OnTrigger" "receptacle_stateToggleStateA0-1"
 	}
 	"origin" "0 -64 64"
 	editor
@@ -413,8 +416,8 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouchAll" "receptacleSetAnimationitem_dropper_close0-1"
-		"OnEndTouchAll" "receptacleSetAnimationitem_dropper_open0-1"
+		"OnStartTouchAll" "receptacle_stateSetStateBTrue0-1"
+		"OnEndTouchAll" "receptacle_stateSetStateBFalse0-1"
 		"OnEndTouchAll" "outputProxyRelay0-1"
 		"OnStartTouchAll" "outputProxyRelay0-1"
 	}
@@ -507,8 +510,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[281.644 50.0028 128.057]"
-		"look" "[214.586 32.2857 84.7169]"
+		"position" "[142.261 4.90265 135.703]"
+		"look" "[75.2033 -12.8144 92.363]"
 	}
 }
 cordons

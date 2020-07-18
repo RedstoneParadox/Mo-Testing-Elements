@@ -79,8 +79,8 @@
 				"Type"          "AND"
 				"invertVar"     "$start_open"
 				"SpawnFire"     "dynamic"
-				"Enable_Cmd"    "input_open,Trigger,,0.00,-1"
-				"Disable_Cmd"   "input_close,Trigger,,0.00,-1"
+				"Enable_Cmd"    "input,Trigger,,0.00,-1"
+				"Disable_Cmd"   "input,Trigger,,0.00,-1"
 				}
 			}
 		"Outputs"
