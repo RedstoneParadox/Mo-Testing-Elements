@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "44"
+	"mapversion" "54"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "44"
+	"mapversion" "54"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -112,8 +112,8 @@ entity
 	"targetname" "input_toggle"
 	connections
 	{
-		"OnTrue" "adderAdd1.00-1"
-		"OnFalse" "adderSubtract1.00-1"
+		"OnTrue" "adderAdd10-1"
+		"OnFalse" "adderSubtract10-1"
 	}
 	"origin" "-64 0 64"
 	editor
@@ -137,7 +137,7 @@ entity
 	{
 		"OutValue" "testInValue0-1"
 	}
-	"origin" "-128 -128 192"
+	"origin" "-128 0 192"
 	editor
 	{
 		"color" "220 30 220"
@@ -154,8 +154,8 @@ entity
 	"targetname" "has_cube_toggle"
 	connections
 	{
-		"OnTrue" "adderAdd2.00-1"
-		"OnFalse" "adderSubtract2.00-1"
+		"OnTrue" "adderAdd20-1"
+		"OnFalse" "adderSubtract20-1"
 	}
 	"origin" "-64 0 128"
 	editor
@@ -174,8 +174,8 @@ entity
 	"targetname" "start_open_toggle"
 	connections
 	{
-		"OnTrue" "adderAdd4.00-1"
-		"OnFalse" "adderSubtract4.00-1"
+		"OnTrue" "adderAdd40-1"
+		"OnFalse" "adderSubtract40-1"
 	}
 	"origin" "-64 0 192"
 	editor
@@ -209,16 +209,16 @@ entity
 	"targetname" "test"
 	connections
 	{
-		"OnCase01" "resultSetValue10-1"
-		"OnCase02" "resultSetValue00-1"
-		"OnCase03" "resultSetValue10-1"
-		"OnCase04" "resultSetValue00-1"
-		"OnCase05" "resultSetValue00-1"
-		"OnCase06" "resultSetValue10-1"
-		"OnCase07" "resultSetValue10-1"
-		"OnCase08" "resultSetValue10-1"
+		"OnCase01" "resultSetValueTest10-1"
+		"OnCase02" "resultSetValueTest00-1"
+		"OnCase03" "resultSetValueTest10-1"
+		"OnCase04" "resultSetValueTest00-1"
+		"OnCase05" "resultSetValueTest00-1"
+		"OnCase06" "resultSetValueTest10-1"
+		"OnCase07" "resultSetValueTest10-1"
+		"OnCase08" "resultSetValueTest10-1"
 	}
-	"origin" "-128 -128 128"
+	"origin" "-128 0 128"
 	editor
 	{
 		"color" "220 30 220"
@@ -240,7 +240,7 @@ entity
 		"OnFalse" "cube_removerEnable0-1"
 		"OnFalse" "cube_removerDisable0.1-1"
 	}
-	"origin" "-128 -128 64"
+	"origin" "-128 0 64"
 	editor
 	{
 		"color" "220 30 220"
@@ -363,6 +363,7 @@ entity
 	"id" "32"
 	"classname" "prop_dynamic"
 	"angles" "0 180 -180"
+	"DefaultAnim" "item_dropper_idle"
 	"DisableBoneFollowers" "0"
 	"disableflashlight" "0"
 	"disablereceiveshadows" "0"
@@ -519,8 +520,8 @@ entity
 	{
 		"OnEndTouchAll" "outputProxyRelay0-1"
 		"OnStartTouchAll" "outputProxyRelay0-1"
-		"OnEndTouchAll" "has_cube_toggleSetValue00-1"
-		"OnStartTouchAll" "has_cube_toggleSetValue10-1"
+		"OnEndTouchAll" "has_cube_toggleSetValueTest00-1"
+		"OnStartTouchAll" "has_cube_toggleSetValueTest10-1"
 	}
 	solid
 	{
@@ -611,8 +612,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-35.9882 244.097 264.524]"
-		"look" "[-30.3761 199.666 196.088]"
+		"position" "[-111.118 340.757 58.8109]"
+		"look" "[-102.656 260.071 80.8505]"
 	}
 }
 cordons
