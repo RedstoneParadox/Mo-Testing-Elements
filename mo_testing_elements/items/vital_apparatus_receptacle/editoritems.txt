@@ -33,7 +33,7 @@
 			}
 		"StartOpen"
 			{
-			"DefaultValue"	"0"
+			"DefaultValue"	"1"
 			"Index"			"2"
 			}
 		}
@@ -79,8 +79,8 @@
 				"Type"          "AND"
 				"invertVar"     "$start_open"
 				"SpawnFire"     "dynamic"
-				"Enable_Cmd"    "input,SetStateATrue,,0.00,-1"
-				"Disable_Cmd"   "input,SetStateAFalse,,0.00,-1"
+				"Enable_Cmd"    "input_open,OnTrigger,,0.00,-1"
+				"Disable_Cmd"   "input_close,OnTrigger,,0.00,-1"
 				}
 			}
 		"Outputs"

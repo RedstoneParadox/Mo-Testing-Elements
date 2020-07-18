@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "18"
+	"mapversion" "26"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "18"
+	"mapversion" "26"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -204,7 +204,7 @@ entity
 	"id" "335"
 	"classname" "func_instance_io_proxy"
 	"targetname" "output"
-	"origin" "0 -64 64"
+	"origin" "0 0 64"
 	editor
 	{
 		"color" "220 30 220"
@@ -215,17 +215,15 @@ entity
 }
 entity
 {
-	"id" "478"
-	"classname" "logic_coop_manager"
-	"DefaultPlayerStateA" "0"
-	"DefaultPlayerStateB" "1"
-	"targetname" "input"
+	"id" "638"
+	"classname" "logic_relay"
+	"StartDisabled" "0"
+	"targetname" "input_open"
 	connections
 	{
-		"OnChangeToAnyTrue" "receptacleSetPlaybackRate1.00-1"
-		"OnChangeToAnyTrue" "cube_removerEnable0-1"
-		"OnChangeToAnyFalse" "receptacleSetPlaybackRate-1.00-1"
-		"OnChangeToAnyTrue" "cube_removerDisable0.5-1"
+		"OnTrigger" "receptacleSetAnimationitem_dropper_open0-1"
+		"OnTrigger" "cube_removerEnable0-1"
+		"OnTrigger" "cube_removerDisable0.5-1"
 	}
 	"origin" "0 64 64"
 	editor
@@ -233,7 +231,26 @@ entity
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 2500]"
+		"logicalpos" "[0 3000]"
+	}
+}
+entity
+{
+	"id" "661"
+	"classname" "logic_relay"
+	"StartDisabled" "0"
+	"targetname" "input_close"
+	connections
+	{
+		"OnTrigger" "receptacleSetAnimationitem_dropper_close0-1"
+	}
+	"origin" "0 -64 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 3500]"
 	}
 }
 entity
@@ -241,6 +258,7 @@ entity
 	"id" "32"
 	"classname" "prop_dynamic"
 	"angles" "0 180 -180"
+	"DefaultAnim" "item_dropper_idle"
 	"DisableBoneFollowers" "0"
 	"disableflashlight" "0"
 	"disablereceiveshadows" "0"
@@ -272,6 +290,7 @@ entity
 	"shadowdepthnocache" "0"
 	"skin" "0"
 	"solid" "6"
+	"spawnflags" "0"
 	"StartDisabled" "0"
 	"SuppressAnimSounds" "0"
 	"targetname" "receptacle"
@@ -394,8 +413,8 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouchAll" "receptacleSetPlaybackRate-1.00-1"
-		"OnEndTouchAll" "receptacleSetPlaybackRate1.00-1"
+		"OnStartTouchAll" "receptacleSetAnimationitem_dropper_close0-1"
+		"OnEndTouchAll" "receptacleSetAnimationitem_dropper_open0-1"
 		"OnEndTouchAll" "outputProxyRelay0-1"
 		"OnStartTouchAll" "outputProxyRelay0-1"
 	}
