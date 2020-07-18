@@ -33,7 +33,7 @@
 			}
 		"StartOpen"
 			{
-			"DefaultValue"	"1"
+			"DefaultValue"	"0"
 			"Index"			"2"
 			}
 		}
@@ -44,12 +44,12 @@
 			"0"
 				{
 				"Name" "instances/bee2/clean/items/vital_apparatus_receptacle/vital_apparatus_receptacle.vmf"
-				"EntityCount" "7"
+				"EntityCount" "6"
 				"BrushCount" "1"
 				"BrushSideCount" "0"
 				}
 			}
-		"TargetName" "mteRotPanel"
+		"TargetName" "mteItemReceptacle"
 		"Offset" "64 64 0"
 		"OccupiedVoxels"
 			{
@@ -79,16 +79,16 @@
 				"Type"          "AND"
 				"invertVar"     "$start_open"
 				"SpawnFire"     "dynamic"
-				"Enable_Cmd"    "input_open,Trigger,,0.00,-1"
-				"Disable_Cmd"   "input_close,Trigger,,0.00,-1"
+				"Enable_Cmd"    "input,SetStateATrue,,0.00,-1"
+				"Disable_Cmd"   "input,SetStateAFalse,,0.00,-1"
 				}
 			}
 		"Outputs"
             {
             "CONNECTION_STANDARD"
                 {
-                "Activate"        "instance:trigger;OnStartTouch"
-                "Deactivate"    "instance:trigger;OnEndTouch"
+                "Activate"        "instance:trigger;OnStartTouchAll"
+                "Deactivate"    "instance:trigger;OnEndTouchAll"
                 }
             }
 		"ConnectionPoints"

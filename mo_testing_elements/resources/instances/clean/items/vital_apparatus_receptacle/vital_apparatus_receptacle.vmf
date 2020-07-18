@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "8"
+	"mapversion" "19"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "8"
+	"mapversion" "19"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -115,10 +115,6 @@ entity
 	"targetname" "cube_remover"
 	"UseScanline" "1"
 	"Visible" "0"
-	connections
-	{
-		"OnDissolve" "cube_removerDisable0-1"
-	}
 	solid
 	{
 		"id" "239"
@@ -205,30 +201,10 @@ entity
 }
 entity
 {
-	"id" "284"
-	"classname" "logic_relay"
-	"StartDisabled" "0"
-	"targetname" "input_open"
-	connections
-	{
-		"OnTrigger" "receptacleSetPlaybackRate1.00-1"
-		"OnTrigger" "cube_removerEnable0-1"
-	}
-	"origin" "0 -64 64"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 1000]"
-	}
-}
-entity
-{
 	"id" "335"
 	"classname" "func_instance_io_proxy"
 	"targetname" "output"
-	"origin" "-64 0 64"
+	"origin" "0 -64 64"
 	editor
 	{
 		"color" "220 30 220"
@@ -239,13 +215,17 @@ entity
 }
 entity
 {
-	"id" "369"
-	"classname" "logic_relay"
-	"StartDisabled" "0"
-	"targetname" "input_close"
+	"id" "478"
+	"classname" "logic_coop_manager"
+	"DefaultPlayerStateA" "0"
+	"DefaultPlayerStateB" "0"
+	"targetname" "input"
 	connections
 	{
-		"OnTrigger" "receptacleSetPlaybackRate-1.00-1"
+		"OnChangeToAnyTrue" "receptacleSetAnimationitem_dropper_open0-1"
+		"OnChangeToAnyTrue" "cube_removerEnable0-1"
+		"OnChangeToAnyFalse" "receptacleSetAnimationitem_dropper_close0-1"
+		"OnChangeToAnyTrue" "cube_removerDisable0.05-1"
 	}
 	"origin" "0 64 64"
 	editor
@@ -253,7 +233,7 @@ entity
 		"color" "220 30 220"
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
-		"logicalpos" "[0 2000]"
+		"logicalpos" "[0 2500]"
 	}
 }
 entity
@@ -414,10 +394,10 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnStartTouch" "receptacleSetPlaybackRate-1.00-1"
-		"OnEndTouch" "receptacleSetPlaybackRate1.00-1"
-		"OnEndTouch" "outputProxyRelay0-1"
-		"OnStartTouch" "outputProxyRelay0-1"
+		"OnStartTouchAll" "receptacleSetPlaybackRate-1.00-1"
+		"OnEndTouchAll" "receptacleSetPlaybackRate1.00-1"
+		"OnEndTouchAll" "outputProxyRelay0-1"
+		"OnStartTouchAll" "outputProxyRelay0-1"
 	}
 	solid
 	{
@@ -509,7 +489,7 @@ cameras
 	camera
 	{
 		"position" "[232.449 37.0051 96.2616]"
-		"look" "[165.391 19.288 52.9219]"
+		"look" "[165.391 19.288 52.9218]"
 	}
 }
 cordons
