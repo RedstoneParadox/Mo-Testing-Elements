@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "62"
+	"mapversion" "63"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "62"
+	"mapversion" "63"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -132,11 +132,6 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "input_toggle"
-	connections
-	{
-		"OnTrue" "input_xnorTest0-1"
-		"OnFalse" "input_xnorTest0-1"
-	}
 	"origin" "-192 0 64"
 	editor
 	{
@@ -152,11 +147,6 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "start_open_toggle"
-	connections
-	{
-		"OnTrue" "input_xnorTest0-1"
-		"OnFalse" "input_xnorTest0-1"
-	}
 	"origin" "-192 0 192"
 	editor
 	{
@@ -216,11 +206,6 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "has_cube_toggle"
-	connections
-	{
-		"OnFalse" "state_norTest0-1"
-		"OnTrue" "state_norTest0-1"
-	}
 	"origin" "-64 0 64"
 	editor
 	{
@@ -236,11 +221,6 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "xnor_result"
-	connections
-	{
-		"OnTrue" "state_norTest0-1"
-		"OnFalse" "state_norTest0-1"
-	}
 	"origin" "-128 0 128"
 	editor
 	{
