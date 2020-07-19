@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "76"
+	"mapversion" "77"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "76"
+	"mapversion" "77"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -102,6 +102,26 @@ world
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
+	}
+}
+entity
+{
+	"id" "2386"
+	"classname" "logic_branch"
+	"InitialValue" "0"
+	"targetname" "output_toggle"
+	connections
+	{
+		"OnFalse" "outputProxyRelay0-1"
+		"OnTrue" "outputProxyRelay0-1"
+	}
+	"origin" "0 64 64"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2500]"
 	}
 }
 entity
@@ -421,8 +441,8 @@ entity
 	"wait" "1"
 	connections
 	{
-		"OnEndTouchAll" "outputProxyRelay0-1"
-		"OnStartTouchAll" "outputProxyRelay0-1"
+		"OnEndTouchAll" "output_toggleSetValueTest00-1"
+		"OnStartTouchAll" "output_toggleSetValueTest10-1"
 		"OnEndTouchAll" "is_empty_toggleSetValueTest10-1"
 		"OnStartTouchAll" "is_empty_toggleSetValueTest00-1"
 	}
@@ -515,8 +535,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-10.6292 192.934 258.015]"
-		"look" "[-19.983 119.023 219.064]"
+		"position" "[112.674 -60.9086 114.702]"
+		"look" "[59.4647 -6.55025 78.9048]"
 	}
 }
 cordons

@@ -87,8 +87,8 @@
             {
             "CONNECTION_STANDARD"
                 {
-                "Activate"        "instance:trigger;OnStartTouchAll"
-                "Deactivate"    "instance:trigger;OnEndTouchAll"
+                "Activate"        "instance:output_toggle;OnTrue"
+                "Deactivate"    "instance:output_toggle;OnFalse"
                 }
             }
 		"ConnectionPoints"
