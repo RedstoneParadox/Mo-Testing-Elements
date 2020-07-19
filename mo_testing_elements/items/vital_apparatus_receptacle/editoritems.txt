@@ -44,7 +44,7 @@
 			"0"
 				{
 				"Name" "instances/bee2/clean/items/vital_apparatus_receptacle/vital_apparatus_receptacle.vmf"
-				"EntityCount" "12"
+				"EntityCount" "13"
 				"BrushCount" "1"
 				"BrushSideCount" "0"
 				}
