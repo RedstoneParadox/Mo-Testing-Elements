@@ -1,0 +1,61 @@
+"Item" 
+	{
+	"Type" "MTE_CHAMBLEROCK_EXIT"
+	"ItemClass" "ItemBase"
+	"Editor"
+	{
+	"SubType"
+		{
+		"Name" "Chamberlock Exit"
+		"Model"
+			{
+			"ModelName"	"selecion_rotating_panel.3ds"
+			}
+		"Palette"
+			{
+			"Tooltip"	"CHAMBERLOCK EXIT"
+			"Image"		"palette/clean/vital_apparatus_receptacle.png"
+			}
+		}
+		"DesiredFacing"		"DESIRES_UP"
+		"MovementHandle"	"HANDLE_4_DIRECTIONS"
+		"InvalidSurface"	"CEILING WALL"
+		}
+	"Properties"
+		{
+		"Portalable"
+			{
+			"DefaultValue"	"1"
+			"Index"			"0"
+			}
+		}
+	"Exporting"
+		{
+		"Instances"
+			{
+			"0"
+				{
+				"Name" "instances/bee2/clean/items/chamberlock_exit/chamberlock_exit.vmf"
+				"EntityCount" "17"
+				"BrushCount" "11"
+				"BrushSideCount" "0"
+				}
+			}
+		"TargetName" "mteChamberlockEx"
+		"Offset" "64 64 64"
+		"OccupiedVoxels"
+			{
+			"Voxel"
+				{
+				"CollideType"		"COLLIDE_NOTHING"
+				"CollideAgainst"	"COLLIDE_ANTLINES"
+
+				"Pos"		"0 0 0"
+				"Surface"
+					{
+					"Normal"	"0 0 1"
+					}
+				}
+			}
+		}
+	}

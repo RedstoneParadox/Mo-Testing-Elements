@@ -25,3 +25,27 @@
 			}
 		}
 	}
+	
+"Item" 
+	{
+	"ID" "MTE_CHAMBERLOCK_ENTRANCE"
+	"Version" 
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN" "chamberlock_entrance"
+			}
+		}
+	}
+	
+"Item" 
+	{
+	"ID" "MTE_CHAMBERLOCK_EXIT"
+	"Version" 
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN" "chamberlock_exit"
+			}
+		}
+	}

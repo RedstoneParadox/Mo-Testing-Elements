@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "4"
+	"mapversion" "9"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,21 +20,26 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "4"
+	"mapversion" "9"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxblobcount" "250"
 	"maxpropscreenwidth" "-1"
 	"skyname" "sky_black_nofog"
+}
+entity
+{
+	"id" "10713"
+	"classname" "func_detail"
 	solid
 	{
 		"id" "6518"
 		side
 		{
-			"id" "601"
+			"id" "1164"
 			"plane" "(32 -64 64) (32 64 64) (64 64 64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -43,9 +48,9 @@ world
 		}
 		side
 		{
-			"id" "600"
+			"id" "1163"
 			"plane" "(32 64 44) (32 64 64) (32 -64 64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -54,9 +59,9 @@ world
 		}
 		side
 		{
-			"id" "599"
+			"id" "1162"
 			"plane" "(64 -64 44) (64 -64 64) (64 64 64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -65,9 +70,9 @@ world
 		}
 		side
 		{
-			"id" "598"
+			"id" "1161"
 			"plane" "(64 64 44) (64 64 64) (32 64 64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -76,9 +81,9 @@ world
 		}
 		side
 		{
-			"id" "597"
+			"id" "1160"
 			"plane" "(32 -64 44) (32 -64 64) (64 -64 64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -87,9 +92,9 @@ world
 		}
 		side
 		{
-			"id" "596"
+			"id" "1159"
 			"plane" "(32 64 44) (32 -64 44) (64 -64 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -98,7 +103,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -108,9 +113,9 @@ world
 		"id" "8814"
 		side
 		{
-			"id" "953"
+			"id" "1170"
 			"plane" "(32 -43 -64) (32 -64 -64) (64 -64 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -119,9 +124,9 @@ world
 		}
 		side
 		{
-			"id" "952"
+			"id" "1169"
 			"plane" "(32 -64 -48) (32 -64 -64) (32 -43 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -130,9 +135,9 @@ world
 		}
 		side
 		{
-			"id" "951"
+			"id" "1168"
 			"plane" "(64 -43 -64) (64 -64 -64) (64 -64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -141,9 +146,9 @@ world
 		}
 		side
 		{
-			"id" "950"
+			"id" "1167"
 			"plane" "(64 -64 -48) (64 -64 -64) (32 -64 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -152,9 +157,9 @@ world
 		}
 		side
 		{
-			"id" "949"
+			"id" "1166"
 			"plane" "(32 -64 -48) (32 -57 -48) (64 -57 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -163,9 +168,9 @@ world
 		}
 		side
 		{
-			"id" "948"
+			"id" "1165"
 			"plane" "(32 -57 -48) (32 -43 -64) (64 -43 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -174,7 +179,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -184,9 +189,9 @@ world
 		"id" "8942"
 		side
 		{
-			"id" "989"
+			"id" "1176"
 			"plane" "(32 64 -64) (32 43 -64) (64 43 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -195,9 +200,9 @@ world
 		}
 		side
 		{
-			"id" "988"
+			"id" "1175"
 			"plane" "(32 43 -64) (32 64 -64) (32 64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -206,9 +211,9 @@ world
 		}
 		side
 		{
-			"id" "987"
+			"id" "1174"
 			"plane" "(64 64 -48) (64 64 -64) (64 43 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -217,9 +222,9 @@ world
 		}
 		side
 		{
-			"id" "986"
+			"id" "1173"
 			"plane" "(32 64 -48) (32 64 -64) (64 64 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -228,9 +233,9 @@ world
 		}
 		side
 		{
-			"id" "985"
+			"id" "1172"
 			"plane" "(32 57 -48) (32 64 -48) (64 64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -239,9 +244,9 @@ world
 		}
 		side
 		{
-			"id" "984"
+			"id" "1171"
 			"plane" "(64 57 -48) (64 43 -64) (32 43 -64)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -250,7 +255,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -260,9 +265,9 @@ world
 		"id" "9095"
 		side
 		{
-			"id" "1000"
+			"id" "1181"
 			"plane" "(32 56 -48) (32 64 -48) (32 64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -271,9 +276,9 @@ world
 		}
 		side
 		{
-			"id" "999"
+			"id" "1180"
 			"plane" "(64 64 -20) (64 64 -48) (64 56 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -282,9 +287,9 @@ world
 		}
 		side
 		{
-			"id" "998"
+			"id" "1179"
 			"plane" "(32 64 -20) (32 64 -48) (64 64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -293,9 +298,9 @@ world
 		}
 		side
 		{
-			"id" "997"
+			"id" "1178"
 			"plane" "(32 64 -48) (32 56 -48) (64 56 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -304,9 +309,9 @@ world
 		}
 		side
 		{
-			"id" "996"
+			"id" "1177"
 			"plane" "(64 64 -20) (64 56 -48) (32 56 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -315,7 +320,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -325,9 +330,9 @@ world
 		"id" "9167"
 		side
 		{
-			"id" "1017"
+			"id" "1186"
 			"plane" "(32 -64 -20) (32 -64 -48) (32 -56 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -336,9 +341,9 @@ world
 		}
 		side
 		{
-			"id" "1016"
+			"id" "1185"
 			"plane" "(64 -56 -48) (64 -64 -48) (64 -64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -347,9 +352,9 @@ world
 		}
 		side
 		{
-			"id" "1015"
+			"id" "1184"
 			"plane" "(64 -64 -20) (64 -64 -48) (32 -64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -358,9 +363,9 @@ world
 		}
 		side
 		{
-			"id" "1014"
+			"id" "1183"
 			"plane" "(32 -56 -48) (32 -64 -48) (64 -64 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -369,9 +374,9 @@ world
 		}
 		side
 		{
-			"id" "1013"
+			"id" "1182"
 			"plane" "(32 -64 -20) (32 -56 -48) (64 -56 -48)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -380,7 +385,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -390,9 +395,9 @@ world
 		"id" "9509"
 		side
 		{
-			"id" "1033"
+			"id" "1191"
 			"plane" "(32 -64 16) (32 -64 -20) (32 -53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -401,9 +406,9 @@ world
 		}
 		side
 		{
-			"id" "1032"
+			"id" "1190"
 			"plane" "(64 -64 -20) (64 -64 16) (64 -53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -412,9 +417,9 @@ world
 		}
 		side
 		{
-			"id" "1031"
+			"id" "1189"
 			"plane" "(64 -64 16) (64 -64 -20) (32 -64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -423,9 +428,9 @@ world
 		}
 		side
 		{
-			"id" "1030"
+			"id" "1188"
 			"plane" "(32 -64 16) (32 -53 16) (64 -53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -434,9 +439,9 @@ world
 		}
 		side
 		{
-			"id" "1029"
+			"id" "1187"
 			"plane" "(32 -53 16) (32 -64 -20) (64 -64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -445,7 +450,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -455,9 +460,9 @@ world
 		"id" "9510"
 		side
 		{
-			"id" "1038"
+			"id" "1196"
 			"plane" "(32 64 -20) (32 64 16) (32 53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -466,9 +471,9 @@ world
 		}
 		side
 		{
-			"id" "1037"
+			"id" "1195"
 			"plane" "(64 64 16) (64 64 -20) (64 53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -477,9 +482,9 @@ world
 		}
 		side
 		{
-			"id" "1036"
+			"id" "1194"
 			"plane" "(32 64 16) (32 64 -20) (64 64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -488,9 +493,9 @@ world
 		}
 		side
 		{
-			"id" "1035"
+			"id" "1193"
 			"plane" "(32 53 16) (32 64 16) (64 64 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -499,9 +504,9 @@ world
 		}
 		side
 		{
-			"id" "1034"
+			"id" "1192"
 			"plane" "(64 53 16) (64 64 -20) (32 64 -20)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -510,7 +515,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -520,9 +525,9 @@ world
 		"id" "9832"
 		side
 		{
-			"id" "1068"
+			"id" "1202"
 			"plane" "(32 -64 29) (32 -64 16) (32 -53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -531,9 +536,9 @@ world
 		}
 		side
 		{
-			"id" "1067"
+			"id" "1201"
 			"plane" "(64 -53 16) (64 -64 16) (64 -64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -542,9 +547,9 @@ world
 		}
 		side
 		{
-			"id" "1066"
+			"id" "1200"
 			"plane" "(64 -64 29) (64 -64 16) (32 -64 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -553,9 +558,9 @@ world
 		}
 		side
 		{
-			"id" "1065"
+			"id" "1199"
 			"plane" "(32 -53 16) (32 -64 16) (64 -64 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -564,9 +569,9 @@ world
 		}
 		side
 		{
-			"id" "1064"
+			"id" "1198"
 			"plane" "(32 -64 29) (32 -42 29) (64 -42 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -575,9 +580,9 @@ world
 		}
 		side
 		{
-			"id" "1063"
+			"id" "1197"
 			"plane" "(32 -42 29) (32 -53 16) (64 -53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -586,7 +591,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -596,9 +601,9 @@ world
 		"id" "9880"
 		side
 		{
-			"id" "1074"
+			"id" "1208"
 			"plane" "(32 53 16) (32 64 16) (32 64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -607,9 +612,9 @@ world
 		}
 		side
 		{
-			"id" "1073"
+			"id" "1207"
 			"plane" "(64 64 29) (64 64 16) (64 53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -618,9 +623,9 @@ world
 		}
 		side
 		{
-			"id" "1072"
+			"id" "1206"
 			"plane" "(32 64 29) (32 64 16) (64 64 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -629,9 +634,9 @@ world
 		}
 		side
 		{
-			"id" "1071"
+			"id" "1205"
 			"plane" "(32 64 16) (32 53 16) (64 53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -640,9 +645,9 @@ world
 		}
 		side
 		{
-			"id" "1070"
+			"id" "1204"
 			"plane" "(32 42 29) (32 64 29) (64 64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -651,9 +656,9 @@ world
 		}
 		side
 		{
-			"id" "1069"
+			"id" "1203"
 			"plane" "(64 42 29) (64 53 16) (32 53 16)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -662,7 +667,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -672,9 +677,9 @@ world
 		"id" "10057"
 		side
 		{
-			"id" "1116"
+			"id" "1214"
 			"plane" "(32 42 29) (32 64 29) (32 64 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -683,9 +688,9 @@ world
 		}
 		side
 		{
-			"id" "1115"
+			"id" "1213"
 			"plane" "(64 64 44) (64 64 29) (64 42 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -694,9 +699,9 @@ world
 		}
 		side
 		{
-			"id" "1114"
+			"id" "1212"
 			"plane" "(32 64 44) (32 64 29) (64 64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -705,9 +710,9 @@ world
 		}
 		side
 		{
-			"id" "1113"
+			"id" "1211"
 			"plane" "(32 11 44) (32 64 44) (64 64 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -716,9 +721,9 @@ world
 		}
 		side
 		{
-			"id" "1112"
+			"id" "1210"
 			"plane" "(32 64 29) (32 42 29) (64 42 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -727,9 +732,9 @@ world
 		}
 		side
 		{
-			"id" "1111"
+			"id" "1209"
 			"plane" "(32 42 29) (32 11 44) (64 11 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -738,7 +743,7 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
@@ -748,9 +753,9 @@ world
 		"id" "10155"
 		side
 		{
-			"id" "1134"
+			"id" "1220"
 			"plane" "(32 -64 44) (32 -64 29) (32 -42 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -759,9 +764,9 @@ world
 		}
 		side
 		{
-			"id" "1133"
+			"id" "1219"
 			"plane" "(64 -42 29) (64 -64 29) (64 -64 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -770,9 +775,9 @@ world
 		}
 		side
 		{
-			"id" "1132"
+			"id" "1218"
 			"plane" "(64 -64 44) (64 -64 29) (32 -64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -781,9 +786,9 @@ world
 		}
 		side
 		{
-			"id" "1131"
+			"id" "1217"
 			"plane" "(32 -64 44) (32 -11 44) (64 -11 44)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -792,9 +797,9 @@ world
 		}
 		side
 		{
-			"id" "1130"
+			"id" "1216"
 			"plane" "(32 -42 29) (32 -64 29) (64 -64 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -803,9 +808,9 @@ world
 		}
 		side
 		{
-			"id" "1129"
+			"id" "1215"
 			"plane" "(32 -11 44) (32 -42 29) (64 -42 29)"
-			"material" "METAL/BLACK_WALL_METAL_002F"
+			"material" "METAL/BLACK_WALL_METAL_004B"
 			"uaxis" "[1 0 0 -128] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -814,10 +819,17 @@ world
 		}
 		editor
 		{
-			"color" "0 253 230"
+			"color" "0 180 0"
 			"visgroupshown" "1"
 			"visgroupautoshown" "1"
 		}
+	}
+	editor
+	{
+		"color" "0 180 0"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
 	}
 }
 entity
@@ -826,7 +838,7 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "input_toggle"
-	"origin" "0 128 128"
+	"origin" "-14 -16 -32"
 	editor
 	{
 		"color" "220 30 220"
@@ -848,7 +860,7 @@ entity
 		"OnAllTrue" "xor_toggleSetValueTest00-1"
 		"OnMixed" "xor_toggleSetValueTest10-1"
 	}
-	"origin" "0 128 160"
+	"origin" "-14 -16 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -863,7 +875,7 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "0"
 	"targetname" "start_open_toggle"
-	"origin" "0 128 192"
+	"origin" "-14 -16 32"
 	editor
 	{
 		"color" "220 30 220"
@@ -883,7 +895,7 @@ entity
 		"OnFalse" "state_andTest0-1"
 		"OnTrue" "state_andTest0-1"
 	}
-	"origin" "0 160 160"
+	"origin" "-14 16 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -905,7 +917,7 @@ entity
 		"OnAllTrue" "is_open_toggleSetValueTest10-1"
 		"OnMixed" "is_open_toggleSetValueTest00-1"
 	}
-	"origin" "0 192 160"
+	"origin" "-14 48 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -920,7 +932,7 @@ entity
 	"classname" "logic_branch"
 	"InitialValue" "1"
 	"targetname" "has_not_passed_toggle"
-	"origin" "0 192 128"
+	"origin" "-14 48 -32"
 	editor
 	{
 		"color" "220 30 220"
@@ -940,7 +952,7 @@ entity
 		"OnFalse" "doorClose0-1"
 		"OnTrue" "doorOpen0-1"
 	}
-	"origin" "0 192 192"
+	"origin" "-14 48 32"
 	editor
 	{
 		"color" "220 30 220"
@@ -958,7 +970,7 @@ entity
 	{
 		"OnMapSpawn" "input_xorTest0-1"
 	}
-	"origin" "0 96 160"
+	"origin" "-14 -48 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -971,7 +983,7 @@ entity
 {
 	"id" "10601"
 	"classname" "trigger_once"
-	"origin" "5 0 0"
+	"origin" "59 0 0"
 	"spawnflags" "4097"
 	"StartDisabled" "0"
 	connections
@@ -984,9 +996,9 @@ entity
 		side
 		{
 			"id" "1158"
-			"plane" "(-3 -64 64) (-3 64 64) (13 64 64)"
+			"plane" "(-4 -64 64) (-4 64 64) (12 64 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 12] 0.25"
+			"uaxis" "[1 0 0 -48] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -995,9 +1007,9 @@ entity
 		side
 		{
 			"id" "1157"
-			"plane" "(-3 64 -64) (-3 -64 -64) (13 -64 -64)"
+			"plane" "(-4 64 -64) (-4 -64 -64) (12 -64 -64)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 12] 0.25"
+			"uaxis" "[1 0 0 -48] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -1006,7 +1018,7 @@ entity
 		side
 		{
 			"id" "1156"
-			"plane" "(-3 -64 -64) (-3 64 -64) (-3 64 64)"
+			"plane" "(-4 -64 -64) (-4 64 -64) (-4 64 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1017,7 +1029,7 @@ entity
 		side
 		{
 			"id" "1155"
-			"plane" "(13 64 -64) (13 -64 -64) (13 -64 64)"
+			"plane" "(12 64 -64) (12 -64 -64) (12 -64 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -1028,9 +1040,9 @@ entity
 		side
 		{
 			"id" "1154"
-			"plane" "(-3 64 -64) (13 64 -64) (13 64 64)"
+			"plane" "(-4 64 -64) (12 64 -64) (12 64 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 12] 0.25"
+			"uaxis" "[1 0 0 -48] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -1039,9 +1051,9 @@ entity
 		side
 		{
 			"id" "1153"
-			"plane" "(13 -64 -64) (-3 -64 -64) (-3 -64 64)"
+			"plane" "(12 -64 -64) (-4 -64 -64) (-4 -64 64)"
 			"material" "TOOLS/TOOLSTRIGGER"
-			"uaxis" "[1 0 0 12] 0.25"
+			"uaxis" "[1 0 0 -48] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
@@ -1182,7 +1194,7 @@ entity
 	"classname" "trigger_portal_cleanser"
 	"drawinfastreflection" "0"
 	"origin" "13.5 0 192"
-	"spawnflags" "4097"
+	"spawnflags" "4105"
 	"StartDisabled" "0"
 	"UseScanline" "1"
 	"Visible" "1"
@@ -1192,10 +1204,10 @@ entity
 		side
 		{
 			"id" "1146"
-			"plane" "(13 64 64) (14 64 64) (14 -64 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"plane" "(13 -64 64) (13 64 64) (14 64 64)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -38.8] 1.25"
+			"vaxis" "[0 -1 0 -1.20001] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1203,10 +1215,10 @@ entity
 		side
 		{
 			"id" "1145"
-			"plane" "(13 -64 -64) (14 -64 -64) (14 64 -64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 -1 0 0] 0.25"
+			"plane" "(13 64 -64) (13 -64 -64) (14 -64 -64)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -38.8] 1.25"
+			"vaxis" "[0 -1 0 -1.20001] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1214,10 +1226,10 @@ entity
 		side
 		{
 			"id" "1144"
-			"plane" "(13 64 64) (13 -64 64) (13 -64 -64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"plane" "(13 -64 -64) (13 64 -64) (13 64 64)"
+			"material" "EFFECTS/FIZZLER"
+			"uaxis" "[0 1 0 127.2] 1.25"
+			"vaxis" "[0 0 -1 257.6] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1226,9 +1238,9 @@ entity
 		{
 			"id" "1143"
 			"plane" "(14 64 -64) (14 -64 -64) (14 -64 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[0 1 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"material" "EFFECTS/FIZZLER"
+			"uaxis" "[0 1 0 127.2] 1.25"
+			"vaxis" "[0 0 -1 129.6] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1236,10 +1248,10 @@ entity
 		side
 		{
 			"id" "1142"
-			"plane" "(14 64 64) (13 64 64) (13 64 -64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"plane" "(13 64 -64) (14 64 -64) (14 64 64)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -38.8] 1.25"
+			"vaxis" "[0 0 -1 -0.4] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1248,9 +1260,9 @@ entity
 		{
 			"id" "1141"
 			"plane" "(14 -64 -64) (13 -64 -64) (13 -64 64)"
-			"material" "TOOLS/TOOLSNODRAW"
-			"uaxis" "[1 0 0 0] 0.25"
-			"vaxis" "[0 0 -1 0] 0.25"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -38.8] 1.25"
+			"vaxis" "[0 0 -1 -0.4] 1.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -1275,8 +1287,8 @@ cameras
 	"activecamera" "0"
 	camera
 	{
-		"position" "[-6.88714 -249.31 132.325]"
-		"look" "[-6.8738 -248.356 132.023]"
+		"position" "[-88.91 302.518 -105.225]"
+		"look" "[-88.1018 302.117 -104.792]"
 	}
 }
 cordons

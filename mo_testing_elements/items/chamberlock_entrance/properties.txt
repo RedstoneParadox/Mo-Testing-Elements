@@ -1,0 +1,6 @@
+"Properties"
+	{
+	"Authors" "RedstoneParadox"
+	"Description" "A chamberlock entrance door. Has inputs and will close permanently behind the player after they pass through it."
+	"all_icon" "clean/vital_apparatus_receptacle.png"
+	}
