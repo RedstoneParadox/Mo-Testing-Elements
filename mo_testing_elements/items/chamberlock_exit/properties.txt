@@ -1,6 +1,6 @@
 "Properties"
 	{
 	"Authors" "RedstoneParadox"
-	"Description" "A chamberlock exit door. Will automatically open and trigger and autosave when the player approaches and permanently close behind them."
+	"Description" "A chamberlock exit door, which serves as an exit for a chamberlock between test chambers and should be used in conjunction with a Chamberlock Entrace. The door will close permanently behind the player and emit an output."
 	"all_icon" "clean/vital_apparatus_receptacle.png"
 	}
