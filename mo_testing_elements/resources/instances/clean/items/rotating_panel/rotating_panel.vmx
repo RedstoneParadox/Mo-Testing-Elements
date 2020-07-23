@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "38"
+	"mapversion" "50"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "38"
+	"mapversion" "50"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -613,7 +613,7 @@ entity
 	"angles" "0 0 0"
 	"initialvalue" "0"
 	"targetname" "input_toggle"
-	"origin" "24 0 -128"
+	"origin" "48 0 -128"
 	editor
 	{
 		"color" "0 100 250"
@@ -636,7 +636,7 @@ entity
 		"OnMixed" "should_rotate_toggleSetValueTest10-1"
 		"OnAllTrue" "should_rotate_toggleSetValueTest00-1"
 	}
-	"origin" "24 0 -104"
+	"origin" "48 0 -104"
 	editor
 	{
 		"color" "0 100 250"
@@ -652,7 +652,7 @@ entity
 	"angles" "0 0 0"
 	"initialvalue" "0"
 	"targetname" "start_deployed_toggle"
-	"origin" "24 0 -80"
+	"origin" "48 0 -80"
 	editor
 	{
 		"color" "0 100 250"
@@ -673,7 +673,7 @@ entity
 		"OnFalse" "animatorSetPlaybackRate-1.00-1"
 		"OnTrue" "animatorSetPlaybackRate1.00-1"
 	}
-	"origin" "48 0 -104"
+	"origin" "24 0 -104"
 	editor
 	{
 		"color" "0 100 250"
@@ -741,8 +741,8 @@ entity
 	connections
 	{
 		"OnMapSpawn" "type_settingGetValue0.5-1"
-		"OnMapSpawn" "input_xorTest1-1"
 		"OnMapSpawn" "armSetAnimation128_idle0-1"
+		"OnMapSpawn" "input_xorTest1-1"
 	}
 	"origin" "-48 0 -80"
 	editor
@@ -861,27 +861,13 @@ entity
 		"logicalpos" "[0 15500]"
 	}
 }
-entity
-{
-	"id" "2938"
-	"classname" "func_instance_parms"
-	"parm1" "$type float 1"
-	"origin" "-48 0 -56"
-	editor
-	{
-		"color" "220 30 220"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 14000]"
-	}
-}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[82.4022 156.736 30.44]"
-		"look" "[65.5181 121.067 -11.5838]"
+		"position" "[64.8294 119.612 -13.2979]"
+		"look" "[47.9453 83.943 -55.3218]"
 	}
 }
 cordons
