@@ -100,8 +100,8 @@
 			"0"
 				{
 				"Name" "instances/bee2/clean/items/rotating_panel/rotating_panel.vmf"
-				"EntityCount" "3"
-				"BrushCount" "0"
+				"EntityCount" "11"
+				"BrushCount" "5"
 				"BrushSideCount" "0"
 				}
 			}
@@ -127,6 +127,10 @@
 				{
 				"Pos"		"0 0 0"
 				}
+			"Voxel"
+				{
+				"Pos"		"0 0 -1"
+				}
 			}
 		"Inputs"
 			{
@@ -135,8 +139,8 @@
 				"Type"          "AND"
 				"invertVar"     "$start_deployed"
 				"SpawnFire"     "dynamic"
-				"Enable_Cmd"    "base,SetAnimation,rotate_45,0.00,-1"
-				"Disable_Cmd"   "base,SetAnimation,reverse_45,0.00,-1"
+				"Enable_Cmd"    "input_toggle,SetValueTest,1,0.00,-1"
+				"Disable_Cmd"   "input_toggle,SetValueTest,0,0.00,-1"
 				}
 			}
 		"ConnectionPoints"
