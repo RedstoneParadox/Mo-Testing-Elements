@@ -48,6 +48,7 @@
 			"SOUND_EDITING_DEACTIVATE"		"P2Editor.CollapseOther"
 			"SOUND_DELETED"					"P2Editor.RemoveOther"
 			}
+		"MovementHandle"		"HANDLE_NONE"
 		}
 	}
 	"Properties"
