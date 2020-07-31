@@ -49,3 +49,15 @@
 			}
 		}
 	}
+	
+"Item" 
+	{
+	"ID" "MTE_PISTON_LASER_RELAY"
+	"Version" 
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN" "piston_laser_relay"
+			}
+		}
+	}

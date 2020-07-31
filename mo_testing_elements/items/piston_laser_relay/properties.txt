@@ -1,0 +1,6 @@
+"Properties"
+	{
+	"Authors" "RedstoneParadox"
+	"Description" "A laser relay mounted on a piston platform, allowing it to be extended or retracted."
+	"all_icon" "clean/vital_apparatus_receptacle.png"
+	}

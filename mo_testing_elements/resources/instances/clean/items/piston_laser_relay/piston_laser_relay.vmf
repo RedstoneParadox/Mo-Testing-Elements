@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "12"
+	"mapversion" "20"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "12"
+	"mapversion" "20"
 	"classname" "worldspawn"
 	"skyname" "sky_black_nofog"
 	"maxpropscreenwidth" "-1"
@@ -103,6 +103,11 @@ entity
 	"solid" "6"
 	"targetname" "relay"
 	"texframeindex" "0"
+	connections
+	{
+		"OnPowered" "proxyProxyRelay0-1"
+		"OnUnpowered" "proxyProxyRelay0-1"
+	}
 	"origin" "0 0 0"
 	editor
 	{
@@ -840,31 +845,18 @@ entity
 }
 entity
 {
-	"id" "1744"
-	"classname" "logic_branch"
-	"angles" "0 0 0"
-	"initialvalue" "0"
-	"targetname" "extend_toggle"
-	"origin" "0 56 -72"
-	editor
-	{
-		"color" "0 100 250"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13268]"
-	}
-}
-entity
-{
 	"id" "1753"
 	"classname" "func_instance_parms"
 	"parm1" "$end_height integer 0"
+	"parm10" "$start_up boolean 0"
 	"parm2" "$start_height integer 0"
 	"parm3" "$base_start float 0.0"
 	"parm4" "$mid_start float 0.0"
 	"parm5" "$top_start float 0.0"
 	"parm6" "$tip_start float 0.0"
 	"parm7" "$bottom_start string"
+	"parm8" "$bottom_level integer 0"
+	"parm9" "$top_level integer 1"
 	"origin" "0 -56 -120"
 	editor
 	{
@@ -970,8 +962,15 @@ entity
 	"targetname" "height_tracker"
 	connections
 	{
-		"OutValue" "segment_managerInValue0-1"
 		"OnGetValue" "segment_managerInValue0-1"
+		"OnChangedFromMin" "retractorSetValue00-1"
+		"OnChangedFromMin" "extenderSetValue00-1"
+		"OnChangedFromMax" "retractorSetValue00-1"
+		"OnChangedFromMax" "extenderSetValue00-1"
+		"OnHitMin" "extenderSetValue10-1"
+		"OnHitMin" "retractorSetValue10-1"
+		"OnHitMax" "extenderSetValue10-1"
+		"OnHitMax" "retractorSetValue10-1"
 	}
 	"origin" "-56 0 -72"
 	editor
@@ -1010,34 +1009,16 @@ entity
 }
 entity
 {
-	"id" "2450"
-	"classname" "logic_branch_listener"
-	"angles" "0 0 0"
-	"branch01" "input_toggle"
-	"branch02" "start_up_toggle"
-	"targetname" "input_xor"
-	connections
-	{
-		"OnAllTrue" "bottom_toggleSetValue00-1"
-		"OnAllFalse" "bottom_toggleSetValue00-1"
-		"OnMixed" "bottom_toggleSetValue00-1"
-	}
-	"origin" "0 56 -96"
-	editor
-	{
-		"color" "0 100 250"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 -13268]"
-	}
-}
-entity
-{
 	"id" "2452"
 	"classname" "logic_branch"
 	"angles" "0 0 0"
 	"initialvalue" "0"
 	"targetname" "input_toggle"
+	connections
+	{
+		"OnTrue" "extenderTest0-1"
+		"OnFalse" "retractorTest0-1"
+	}
 	"origin" "0 56 -144"
 	editor
 	{
@@ -1049,12 +1030,31 @@ entity
 }
 entity
 {
-	"id" "2458"
+	"id" "2727"
+	"classname" "func_instance_io_proxy"
+	"targetname" "proxy"
+	"origin" "0 -56 -144"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12768]"
+	}
+}
+entity
+{
+	"id" "3025"
 	"classname" "logic_branch"
 	"angles" "0 0 0"
 	"initialvalue" "0"
-	"targetname" "start_up_toggle"
-	"origin" "0 56 -120"
+	"targetname" "extender"
+	connections
+	{
+		"OnTrue" "height_trackerAdd10-1"
+		"OnFalse" "height_trackerGetValue0-1"
+	}
+	"origin" "0 56 -192"
 	editor
 	{
 		"color" "0 100 250"
@@ -1065,15 +1065,17 @@ entity
 }
 entity
 {
-	"id" "2605"
-	"classname" "logic_auto"
+	"id" "3185"
+	"classname" "logic_branch"
 	"angles" "0 0 0"
-	"spawnflags" "1"
+	"initialvalue" "0"
+	"targetname" "retractor"
 	connections
 	{
-		"OnMapSpawn" "input_xorTest0-1"
+		"OnTrue" "height_trackerAdd-10-1"
+		"OnFalse" "height_trackerGetValue0-1"
 	}
-	"origin" "0 56 -168"
+	"origin" "0 56 -216"
 	editor
 	{
 		"color" "0 100 250"
@@ -1082,13 +1084,57 @@ entity
 		"logicalpos" "[0 -13268]"
 	}
 }
+entity
+{
+	"id" "3313"
+	"classname" "math_counter"
+	"angles" "0 0 0"
+	"max" "0"
+	"min" "0"
+	"startdisabled" "0"
+	"startvalue" "$top_level"
+	"targetname" "end_height_corrector"
+	connections
+	{
+		"OutValue" "height_trackerSetMaxValueNoFire0-1"
+	}
+	"origin" "0 -56 -168"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12768]"
+	}
+}
+entity
+{
+	"id" "3348"
+	"classname" "logic_auto"
+	"angles" "0 0 0"
+	"spawnflags" "1"
+	"targetname" "logic_auto"
+	connections
+	{
+		"OnMapSpawn" "end_height_correctorAdd10-1"
+		"OnMapSpawn" "input_toggleTest0-1"
+	}
+	"origin" "0 -56 -192"
+	editor
+	{
+		"color" "0 100 250"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 -12768]"
+	}
+}
 cameras
 {
 	"activecamera" "0"
 	camera
 	{
-		"position" "[208.578 68.1094 -76.3822]"
-		"look" "[185.464 55.1936 -77.1218]"
+		"position" "[-489.017 -67.714 15.3432]"
+		"look" "[-465.429 -61.1298 5.2494]"
 	}
 }
 cordons
