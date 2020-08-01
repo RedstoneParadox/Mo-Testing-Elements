@@ -80,7 +80,7 @@
 			{
 			"0"
 				{
-				"Name" "instances/bee2/clean/items/piston_laser_relay/piston_laser_relay.vmf"
+				"Name" "instances/bee2/clean/items/piston_laser_relay/piston_lz_common.vmf"
 				"EntityCount" "22"
 				"BrushCount" "0"
 				"BrushSideCount" "0"
@@ -115,13 +115,10 @@
 			}
 		"Inputs"
 			{
-			"BEE2"
+			"CONNECTION_STANDARD"
 				{
-				"Type"          "AND"
-				"invertVar"     "$start_up"
-				"SpawnFire"     "dynamic"
-				"Enable_Cmd"    "input_toggle,SetValueTest,1,0.00,-1"
-				"Disable_Cmd"   "input_toggle,SetValueTest,0,0.00,-1"
+				"Activate"      "instance:counter;Add"
+				"Deactivate"    "instance:counter;Subtract"
 				}
 			}
 		"Outputs"

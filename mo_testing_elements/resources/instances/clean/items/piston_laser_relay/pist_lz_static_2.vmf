@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "353"
+	"mapversion" "354"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "353"
+	"mapversion" "354"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -40,7 +40,7 @@ entity
 	"classname" "func_instance_parms"
 	"parm1" "$parent target_destination"
 	"parm2" "$skin integer 0"
-	"origin" "32 0 -240"
+	"origin" "32 2.55108e-005 -144"
 	editor
 	{
 		"color" "220 30 220"
@@ -73,7 +73,7 @@ entity
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "0 -2.55108e-005 -128.264"
+	"origin" "0 0 -32.264"
 	editor
 	{
 		"color" "255 255 0"
