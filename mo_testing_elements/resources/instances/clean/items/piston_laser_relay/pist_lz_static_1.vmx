@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "354"
+	"mapversion" "359"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,13 +20,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "4"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "354"
+	"mapversion" "359"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -40,7 +40,7 @@ entity
 	"classname" "func_instance_parms"
 	"parm1" "$parent target_destination"
 	"parm2" "$skin integer 0"
-	"origin" "32 0 -240"
+	"origin" "32 2.55108e-005 -144"
 	editor
 	{
 		"color" "220 30 220"
@@ -68,12 +68,12 @@ entity
 	"mincpulevel" "0"
 	"mindxlevel" "0"
 	"mingpulevel" "0"
-	"model" "models/props_bts/straight_piston_end.mdl"
+	"model" "models/props_bts/straight_piston_base.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "0 -2.55108e-005 -128.264"
+	"origin" "0 0 -36"
 	editor
 	{
 		"color" "255 255 0"

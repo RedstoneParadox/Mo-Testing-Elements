@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8419"
-	"mapversion" "356"
+	"mapversion" "358"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,13 +20,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "16"
+	"nGridSpacing" "2"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "356"
+	"mapversion" "358"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -40,7 +40,7 @@ entity
 	"classname" "func_instance_parms"
 	"parm1" "$parent target_destination"
 	"parm2" "$skin integer 0"
-	"origin" "32 2.55108e-005 -144"
+	"origin" "32 0 -148"
 	editor
 	{
 		"color" "220 30 220"
@@ -68,7 +68,7 @@ entity
 	"skin" "0"
 	"solid" "6"
 	"targetname" "piston_3"
-	"origin" "0 0 -32.264"
+	"origin" "0 -2.55108e-005 -36.264"
 	editor
 	{
 		"color" "220 30 220"
